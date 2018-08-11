@@ -1,0 +1,9 @@
+<seelog type="sync" minlevel="info">
+    <outputs formatid="main" >
+        <rollingfile type="size" filename="./log/webserviceB.log" maxsize="10475520" maxrolls="20"/>
+    </outputs>
+    <formats>
+        <format id="main" format="[%Date(2006-01-02 15:04:05.000)][%LEV][%Func %File:%Line] %Msg%n"/>
+        <format id="colored"  format="%EscM(46)%Level%EscM(49) %Msg%n%EscM(0)"/>
+    </formats>
+</seelog>
